@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/anim_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonClick"
+        android:text="Change Animation" />
+
+    <Button
+        android:id="@+id/duration_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/anim_btn"
+        android:onClick="onButtonClick"
+        android:text="Change Duration" />
+
+    <Button
+        android:id="@+id/offset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/duration_btn"
+        android:onClick="onButtonClick"
+        android:text="Change start offset between each child" />
+
+    <Button
+        android:id="@+id/open_interpolator_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offset_btn"
+        android:onClick="onButtonClick"
+        android:text="Change Open Interpolator" />
+
+    <Button
+        android:id="@+id/close_interpolator_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/open_interpolator_btn"
+        android:onClick="onButtonClick"
+        android:text="Change Close Interpolator" />
+
+    <com.floatingbuttonmenu.FloatingButtonMenu xmlns:floating="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        floating:button_margin_right="20dp"
+        floating:button_margin_bottom="20dp"
+        floating:button_width="50dp"
+        floating:button_height="50dp"
+        floating:bg="@drawable/composer_button"
+        floating:fg="@drawable/composer_icn_plus"
+        floating:radius="120dp"
+        floating:background_color="#AA000000"
+        floating:show_background="true"/>
+
+</RelativeLayout>

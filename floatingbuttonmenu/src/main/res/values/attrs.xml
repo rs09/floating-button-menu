@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="FloatingButton">
+        <attr name="fromDegrees" format="float|reference" />
+        <attr name="toDegrees" format="float|reference" />
+        <attr name="radius" format="dimension|reference" />
+        <attr name="button_width" format="dimension|reference"/>
+        <attr name="button_height" format="dimension|reference"/>
+        <attr name="fg" format="reference" />
+        <attr name="bg" format="reference" />
+        <attr name="background_color" format="color|reference" />
+        <attr name="button_margin" format="dimension|reference" />
+        <attr name="button_margin_left" format="dimension|reference" />
+        <attr name="button_margin_top" format="dimension|reference" />
+        <attr name="button_margin_right" format="dimension|reference" />
+        <attr name="button_margin_bottom" format="dimension|reference" />
+        <attr name="show_background" format="boolean" />
+    </declare-styleable>
+
+</resources>
